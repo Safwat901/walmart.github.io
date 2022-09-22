@@ -1,0 +1,450 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background:  #F5F5F5;  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+
+/*  start from here */
+/* UPPER MENU ...................... */
+.main_div{
+background: #031424;
+width: 1440px;
+Height:252px;
+position: absolute;
+left: 0px;
+top: 0px;
+
+
+
+}
+
+
+
+.upperMenu ul{
+  padding: 0;
+  margin: 0;
+  /* float: right; */
+  margin-right: 30px;
+  margin-left: 147px;
+
+}
+
+.upperMenu ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+
+.upperMenu ul li a{
+  display: block;
+  padding: 0 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.upperMenu ul ul{
+position: absolute;
+top: 60px;
+display: none;
+
+}
+
+.upperMenu ul li:hover>ul{
+  display: block;
+  
+  }
+
+  .upperMenu ul ul li{
+    width: 150px;
+    display: list-item;
+    float: none;
+    position: relative;
+    
+    }
+
+    /* MIDDLE MENU................ */
+
+    .searchBar input{
+      width: 584px;
+      height: 59px;
+      background: #FFFFFF;
+      border-radius: 6px;
+    }
+
+    .searchBar button{
+      position: absolute;
+      width: 109px;
+      height: 55px;
+      left: 887px;
+      margin-top: 12px;
+      
+      
+      background: #EF262C;
+      border-radius: 0px 6px 6px 0px;
+      border: none;
+    }
+
+    .searchBox_inp{
+      font-family: 'Inter';
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+  .middleMenu{
+    display: flex;
+    gap: 100px;
+    margin-left: 160px;
+    margin-top: 50px;
+  }
+
+  .carts ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+    color: #FFFFFF;
+  }
+
+  .carts ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+  }
+  .carts ul a{
+   display: block;
+   padding: 0 15px;
+  }
+
+  .brandName h1{
+   
+    
+    
+    
+    color: #FFFFFF;
+    font-weight: bold;
+    
+   
+  }
+
+  /* NAVBAR........................ */
+
+
+  nav{
+   
+    width: 100%;
+    margin-top: 28px;
+    margin-left: 160px;
+    
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    
+    
+   
+  }
+
+  nav .firstUl>li{
+   display: inline-block;
+   width: 180px;
+  
+   
+  }
+
+  nav a{
+    margin: 0;
+    text-align: left;
+    padding: 12px 15px 12px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-family: 'Inter';
+    /* background: red; */
+  }
+
+  nav li:hover>a{
+    /* background: #EF262C; */
+    cursor: pointer;
+    /* border-radius: 10px 10px 0 0; */
+  }
+  .subMenu a{
+    color: #303030;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    /* margin-left: -10px; */
+    background: #FFFFFF;
+    z-index: 5;
+    
+   
+  }
+
+  nav .subMenu, nav .supersubMenu, nav .extrasubMenu{
+    position: absolute;
+    display: none;
+    z-index: 5;
+  }
+  nav .subMenu li{
+    position: relative;
+    z-index: 5;
+  }
+  nav .supersubMenu{
+    top:0;
+    right: 0;
+    transform: translate(100%,0);
+    
+  }
+  nav .firstUl>li:hover .subMenu, nav .subMenu>li:hover> .supersubMenu,nav .supersubMenu>li:hover> .extrasubMenu{
+    display: block;
+    
+    
+  }
+  nav .extrasubMenu{
+    top:0;
+    right: 0;
+    transform: translate(100%,0);
+  }
+
+
+  /* IMAGE FIELD..................... */
+
+  .mainBody{
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 283px;
+    height: 350px;
+    
+    
+  }
+
+  .bigImg img{
+    position: absolute;
+    width: 557px;
+    height: 346px;
+    left: 330px;
+    top: 284px;
+    border-radius: 6px;
+    
+  }
+
+  .smalImg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 950px;
+    gap: 22px;
+  }
+
+  .smalImg img{
+    left: 1016px;
+    top: 284px;
+    width: 277px;
+    height: 159px;
+    border-radius: 4px;
+
+  }
+
+  /* PRODUCTS CATEGORIES.......... */
+  
+  .headings h2{
+    font-family: 'Inter';
+    font-weight: 700;
+  }
+
+  .category1{
+   
+    margin-bottom: 10px;
+    margin-left: -50px;
+  
+
+  }
+  .category1 ul{
+    padding: 0;
+    margin: 0;
+    /* float: right; */
+    margin-right: 30px;
+    margin-left: 5px;
+
+  }
+
+  .category1 ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-left: 200px;
+    /* background: #031424; */
+
+  }
+  .category1 ul li a{
+    display: block;
+    padding: 0 15px;
+    
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+
+  }
+
+   .category1 ul{
+    padding: 0;
+    margin: 0;
+    /* float: right; */
+    margin-right: 30px;
+    margin-left: 5px;
+
+  }
+
+  .category1 ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+    background: #FFFFFF;
+    height: 33px;
+    width: 220px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    text-align: center;
+    margin-left: 50px;
+
+  }
+  .category1 ul li a{
+    display: block;
+    padding: 0 15px;
+    
+    margin-top: -10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+
+  }
+
+ .mainCategory{
+  margin-top: 130px;
+  margin-left: 160px;
+ }
+
+ .category2 ul{
+  padding: 0;
+    margin: 0;
+    /* float: right; */
+    margin-right: 30px;
+    margin-left: 5px;
+
+}
+
+.category2 ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-left: 200px;
+  /* background: #031424; */
+
+}
+.category2 ul li a{
+  display: block;
+  padding: 0 15px;
+  
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  font-family: 'Inter';
+
+}
+.category2 ul{
+  padding: 0;
+  margin: 0;
+  /* float: right; */
+  margin-right: 30px;
+  margin-left: 5px;
+
+}
+
+.category2 ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-left: 100px;
+  background: #FFFFFF;
+  height: 33px;
+  width: 220px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  text-align: center;
+  margin-left: 50px;
+
+}
+.category2 ul li a{
+  display: block;
+  padding: 0 15px;
+  
+  margin-top: -10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+
+}
+.category2{
+   
+  
+  margin-left: -50px;
+
+
+}
+
+
+
+ 
